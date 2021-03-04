@@ -1,0 +1,53 @@
+//Working in the same local repository of the previous program
+
+$ git branch newUpdate
+$ git checkout newUpdate
+$ nano calculator.c
+
+// Updating Source Code
+
+#include<stdio.h>
+int main(){
+        char op; 
+        float operand1, operand2;
+        printf("Enter 1st operand: ");
+        scanf("%f",&operand1);
+        printf("Enter the operator eg( + , - , / , * ): ");
+        scanf(" %c",&op);
+        printf("Enter 2nd operand: ");
+        scanf("%f",&operand2);
+        switch(op){
+                case '+': printf("%.2f + %.2f = %.2f",operand1, operand2, operand1+operand2);
+                break;
+
+                case '-': printf("%.2f - %.2f = %.2f",operand1, operand2, operand1-operand2);
+                break;
+
+                case '/': printf("%.2f / %.2f = %.2f",operand1, operand2, operand1/operand2);
+                break;
+
+                case '*': printf("%.2f x %.2f = %.2f",operand1, operand2, operand1*operand2);
+                break;
+    
+                default: printf("Enter valid operator\n");
+        }
+        printf("\n");
+}
+
+//Demonstrating git add, commit, status, log, git branch, git merge
+
+$ git add .
+$ git commit -m "New Operator Update"
+$ git status
+$ git log
+$ git branch
+
+//Checking out to master branch to merge
+
+$ git checkout master
+$ git merge newUpdate
+
+
+
+
+
