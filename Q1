@@ -13,29 +13,13 @@ int main(){
         scanf(" %c",&op);
         printf("Enter 2nd operand: ");
         scanf("%f",&operand2);
-        switch(op){
-                case '+': printf("%.2f + %.2f = %.2f",operand1, operand2, operand1+operand2);
-                break;
-
-                case '-': printf("%.2f - %.2f = %.2f",operand1, operand2, operand1-operand2);
-                break;
-
-                case '/': printf("%.2f / %.2f = %.2f",operand1, operand2, operand1/operand2);
-                break;
-
-                case '*': printf("%.2f x %.2f = %.2f",operand1, operand2, operand1*operand2);
-                break;
-    
-                default: printf("Enter valid operator\n");
-        }
-        printf("\n");
 }
 
 
 git init
 git add calculator.c
-git -config --global user.email nganaremba@mtu.ac.in
-git -config --global user.name NganarembaShija
+git config --global user.email nganaremba@mtu.ac.in
+git config --global user.name NganarembaShija
 git commit -m "calculator.c"
 git status
 git log
