@@ -1,6 +1,6 @@
-mkdir Github
-cd Github
-nano calculator.c
+$ mkdir Github
+$ cd Github
+$ nano calculator.c
 
 //Calculator Source Code
 #include<stdio.h>
@@ -16,21 +16,21 @@ int main(){
 }
 
 
-git init
-git add calculator.c
-git config --global user.email nganaremba@mtu.ac.in
-git config --global user.name NganarembaShija
-git commit -m "calculator.c"
-git status
-git log
+$ git init
+$ git add calculator.c
+$ git config --global user.email nganaremba@mtu.ac.in
+$ git config --global user.name NganarembaShija
+$ git commit -m "calculator.c"
+$ git status
+$ git log
 
 // We created a new repository called "Calc" in github server
 
-git remote add origin https://github.com/NganarembaShija/Calc.git
-git push origin master
+$ git remote add origin https://github.com/NganarembaShija/Calc.git
+$ git push origin master
 
 
 // After making some update in remote repository
 
-git pull origin master
+$ git pull origin master
 
